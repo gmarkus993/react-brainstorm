@@ -1,0 +1,27 @@
+
+
+
+// background-color: #3B3C36;
+.button-group{
+    display: grid;
+    grid-template-columns: 70px;
+    gap: 4px;
+    font-size: medium;
+    margin: 10px;
+    padding: 30px;
+    align-items: center;
+}
+
+.button {
+    color: #09c707;
+    background-color: gray;
+    font-size: larger;
+
+    &:hover{
+        transition: 0.5s ease-in-out;
+        color: aqua;
+    }
+
+    
+}
+
