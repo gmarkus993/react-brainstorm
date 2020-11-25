@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Login from "./login"
-import Register from "./register"
 import Main from "../style/main.scss"
 import image from "../../static/assets/images/hoodedMage.jpg"
 
@@ -29,11 +28,17 @@ export default class App extends Component {
         
         }}>
         <div className = 'button-group'>
+
           <button onClick={this.sayHello} 
+          
           style={{height: '22px'}}
+          
           >TEST</button>
-          <Login/>
+          
+          <Login sayHello={this.sayHello}/>
+          
           <Register/>
+        
         </div>
       </div>
     );

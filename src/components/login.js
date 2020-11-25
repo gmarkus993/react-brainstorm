@@ -1,19 +1,11 @@
-import React, { Component } from 'react';
-import image from "../../static/assets/images/hoodedMage.jpg"
+import React from "react"
 
-
-
-export default class Login extends Component{
-    handleClick(props) {
-        console.log("this is a test!")
-    }
-
-
-     render(){
-         return <button onClick={ () => this.props.handleClick()}
-        className="button" type="input"> Login</button>
-            
-        
-    }
+export default function login(props){
+    return(
+        <div>
+            <button onClick={() => props.sayHello()}>Login</button>
+            <button onClick={() => props.sayHello()}>Register</button>
+        </div>
+    )
 }
 
